@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		83B3B4D619FF917F00AC7D4E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 83B3B4D519FF917F00AC7D4E /* main.m */; };
 		83B3B4D919FF917F00AC7D4E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 83B3B4D819FF917F00AC7D4E /* AppDelegate.m */; };
-		83B3B4DC19FF917F00AC7D4E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83B3B4DB19FF917F00AC7D4E /* ViewController.m */; };
 		83B3B4DF19FF917F00AC7D4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83B3B4DD19FF917F00AC7D4E /* Main.storyboard */; };
 		83B3B4E119FF917F00AC7D4E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83B3B4E019FF917F00AC7D4E /* Images.xcassets */; };
 		83B3B4E419FF917F00AC7D4E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83B3B4E219FF917F00AC7D4E /* LaunchScreen.xib */; };
@@ -32,8 +31,6 @@
 		83B3B4D519FF917F00AC7D4E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		83B3B4D719FF917F00AC7D4E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		83B3B4D819FF917F00AC7D4E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		83B3B4DA19FF917F00AC7D4E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		83B3B4DB19FF917F00AC7D4E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		83B3B4DE19FF917F00AC7D4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		83B3B4E019FF917F00AC7D4E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		83B3B4E319FF917F00AC7D4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -83,8 +80,6 @@
 			children = (
 				83B3B4D719FF917F00AC7D4E /* AppDelegate.h */,
 				83B3B4D819FF917F00AC7D4E /* AppDelegate.m */,
-				83B3B4DA19FF917F00AC7D4E /* ViewController.h */,
-				83B3B4DB19FF917F00AC7D4E /* ViewController.m */,
 				83B3B4DD19FF917F00AC7D4E /* Main.storyboard */,
 				83B3B4E019FF917F00AC7D4E /* Images.xcassets */,
 				83B3B4E219FF917F00AC7D4E /* LaunchScreen.xib */,
@@ -219,7 +214,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83B3B4DC19FF917F00AC7D4E /* ViewController.m in Sources */,
 				83B3B4D919FF917F00AC7D4E /* AppDelegate.m in Sources */,
 				83B3B4D619FF917F00AC7D4E /* main.m in Sources */,
 			);
@@ -414,6 +408,7 @@
 				83B3B4F519FF917F00AC7D4E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		83B3B4F619FF917F00AC7D4E /* Build configuration list for PBXNativeTarget "NerdfeedTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +417,7 @@
 				83B3B4F819FF917F00AC7D4E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
