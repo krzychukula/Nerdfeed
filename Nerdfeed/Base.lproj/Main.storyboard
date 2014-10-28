@@ -20,10 +20,10 @@
             </objects>
             <point key="canvasLocation" x="945" y="279"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Courses View Controller-->
         <scene sceneID="ox2-oU-Ebk">
             <objects>
-                <tableViewController id="bFh-jC-VjC" sceneMemberID="viewController">
+                <tableViewController id="bFh-jC-VjC" customClass="CoursesViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Xuh-rL-lw9">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

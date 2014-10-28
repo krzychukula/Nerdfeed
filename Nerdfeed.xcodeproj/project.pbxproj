@@ -13,6 +13,7 @@
 		83B3B4E119FF917F00AC7D4E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83B3B4E019FF917F00AC7D4E /* Images.xcassets */; };
 		83B3B4E419FF917F00AC7D4E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83B3B4E219FF917F00AC7D4E /* LaunchScreen.xib */; };
 		83B3B4F019FF917F00AC7D4E /* NerdfeedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 83B3B4EF19FF917F00AC7D4E /* NerdfeedTests.m */; };
+		83B3B50219FF9B7600AC7D4E /* CoursesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83B3B50119FF9B7600AC7D4E /* CoursesViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,8 @@
 		83B3B4E919FF917F00AC7D4E /* NerdfeedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NerdfeedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		83B3B4EE19FF917F00AC7D4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83B3B4EF19FF917F00AC7D4E /* NerdfeedTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NerdfeedTests.m; sourceTree = "<group>"; };
+		83B3B50019FF9B7600AC7D4E /* CoursesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoursesViewController.h; sourceTree = "<group>"; };
+		83B3B50119FF9B7600AC7D4E /* CoursesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoursesViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +81,8 @@
 		83B3B4D219FF917F00AC7D4E /* Nerdfeed */ = {
 			isa = PBXGroup;
 			children = (
+				83B3B50019FF9B7600AC7D4E /* CoursesViewController.h */,
+				83B3B50119FF9B7600AC7D4E /* CoursesViewController.m */,
 				83B3B4D719FF917F00AC7D4E /* AppDelegate.h */,
 				83B3B4D819FF917F00AC7D4E /* AppDelegate.m */,
 				83B3B4DD19FF917F00AC7D4E /* Main.storyboard */,
@@ -215,6 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				83B3B4D919FF917F00AC7D4E /* AppDelegate.m in Sources */,
+				83B3B50219FF9B7600AC7D4E /* CoursesViewController.m in Sources */,
 				83B3B4D619FF917F00AC7D4E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
