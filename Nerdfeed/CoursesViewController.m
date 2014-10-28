@@ -8,7 +8,27 @@
 
 #import "CoursesViewController.h"
 
+@interface CoursesViewController ()
+
+@property (nonatomic) NSURLSession *session;
+
+@end
+
 @implementation CoursesViewController
+
+- (instancetype)initWithStyle:(UITableViewStyle)style
+{
+    self = [super initWithStyle:style];
+    if (self) {
+        self.navigationItem.title = @"Courses";
+        NSURLSessionConfiguration *config = [NSURLSessionConfiguration defaultSessionConfiguration];
+        _session = [NSURLSession sessionWithConfiguration:config
+                                                 delegate:nil
+                                            delegateQueue:nil];
+    }
+    NSLog(@"initWithStyle");
+    return self;
+}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {

@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "CoursesViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,18 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    CoursesViewController *cvc = [[CoursesViewController alloc] initWithStyle:UITableViewStylePlain];
+    UINavigationController *masterNav = [[UINavigationController alloc] initWithRootViewController:cvc];
+    
+    self.window.rootViewController = masterNav;
+    
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+    
+    
     return YES;
 }
 
