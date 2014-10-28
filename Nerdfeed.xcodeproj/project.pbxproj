@@ -14,6 +14,7 @@
 		83B3B4E419FF917F00AC7D4E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83B3B4E219FF917F00AC7D4E /* LaunchScreen.xib */; };
 		83B3B4F019FF917F00AC7D4E /* NerdfeedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 83B3B4EF19FF917F00AC7D4E /* NerdfeedTests.m */; };
 		83B3B50219FF9B7600AC7D4E /* CoursesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83B3B50119FF9B7600AC7D4E /* CoursesViewController.m */; };
+		83B3B50519FFC0F600AC7D4E /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83B3B50419FFC0F600AC7D4E /* WebViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		83B3B4EF19FF917F00AC7D4E /* NerdfeedTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NerdfeedTests.m; sourceTree = "<group>"; };
 		83B3B50019FF9B7600AC7D4E /* CoursesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoursesViewController.h; sourceTree = "<group>"; };
 		83B3B50119FF9B7600AC7D4E /* CoursesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoursesViewController.m; sourceTree = "<group>"; };
+		83B3B50319FFC0F600AC7D4E /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		83B3B50419FFC0F600AC7D4E /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +91,8 @@
 				83B3B4DD19FF917F00AC7D4E /* Main.storyboard */,
 				83B3B4E019FF917F00AC7D4E /* Images.xcassets */,
 				83B3B4E219FF917F00AC7D4E /* LaunchScreen.xib */,
+				83B3B50319FFC0F600AC7D4E /* WebViewController.h */,
+				83B3B50419FFC0F600AC7D4E /* WebViewController.m */,
 				83B3B4D319FF917F00AC7D4E /* Supporting Files */,
 			);
 			path = Nerdfeed;
@@ -222,6 +227,7 @@
 				83B3B4D919FF917F00AC7D4E /* AppDelegate.m in Sources */,
 				83B3B50219FF9B7600AC7D4E /* CoursesViewController.m in Sources */,
 				83B3B4D619FF917F00AC7D4E /* main.m in Sources */,
+				83B3B50519FFC0F600AC7D4E /* WebViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

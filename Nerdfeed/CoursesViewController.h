@@ -7,5 +7,10 @@
 //
 #import <UIKit/UIKit.h>
 
+@class WebViewController;
+
 @interface CoursesViewController : UITableViewController
+
+@property (nonatomic) WebViewController *webViewController;
+
 @end
