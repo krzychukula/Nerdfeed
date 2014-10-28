@@ -11,10 +11,18 @@
 @interface CoursesViewController ()
 
 @property (nonatomic) NSURLSession *session;
+@property (nonatomic, copy) NSArray *courses;
 
 @end
 
 @implementation CoursesViewController
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"UITableViewCell"];
+}
 
 - (instancetype)initWithStyle:(UITableViewStyle)style
 {
@@ -33,13 +41,16 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    NSLog(@"get num of rows");
-    return 0;
+    return [self.courses count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return nil;
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"UITableViewCell" forIndexPath:indexPath];
+    NSDictionary *course = self.courses[indexPath.row];
+    cell.textLabel.text = course[@"title"];
+    
+    return cell;
 }
 
 - (void)fetchFeed
@@ -48,14 +59,21 @@
     NSURL *url = [NSURL URLWithString:requestString];
     NSURLRequest *req = [NSURLRequest requestWithURL:url];
     
-    NSURLSessionDataTask *dataTask = [self.session dataTaskWithRequest:req
-                                                     completionHandler:^(NSData *data, NSURLResponse *response, NSError *error){
+    NSURLSessionDataTask *dataTask = [self.session
+                                      dataTaskWithRequest:req
+                                        completionHandler:^(NSData *data, NSURLResponse *response, NSError *error){
                                                          
-                                                         NSString *json = [[NSString alloc] initWithData:data
-                                                                                                encoding:NSUTF8StringEncoding];
-                                                         NSLog(@"%@", json);
+                                            NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data
+                                                                                                 options:0
+                                                                                                   error:nil];
+                                            self.courses = json[@"courses"];
+                                            NSLog(@"%@", self.courses);
+                                            
+                                            dispatch_async(dispatch_get_main_queue(), ^{
+                                                [self.tableView reloadData];
+                                            });
                                                          
-                                                     }];
+                                    }];
     [dataTask resume];
 }
 
