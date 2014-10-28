@@ -88,7 +88,7 @@
 }
 
 
-- (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSDictionary *course = self.courses[indexPath.row];
     NSURL *URL = [NSURL URLWithString:course[@"url"]];
