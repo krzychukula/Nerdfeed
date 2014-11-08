@@ -26,4 +26,15 @@
     }
 }
 
+- (void)splitViewController:(UISplitViewController *)svc
+     willHideViewController:(UIViewController *)aViewController
+          withBarButtonItem:(UIBarButtonItem *)barButtonItem
+       forPopoverController:(UIPopoverController *)pc
+{
+    //if this bar button item does not have a title, it will not apprear at all
+    barButtonItem.title = @"Courses";
+    
+    //Take this bar burron item and put it on the left side of the nav item
+    self.navigationItem.leftBarButtonItem = barButtonItem;
+}
 @end
