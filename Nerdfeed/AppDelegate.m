@@ -28,8 +28,20 @@
     WebViewController *wvc = [[WebViewController alloc] init];
     cvc.webViewController = wvc;
     
-    self.window.rootViewController = masterNav;
-    
+    if ([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad) {
+        //webViewController must be in navigation controller
+        UINavigationController *detailNav = [[UINavigationController alloc] initWithRootViewController:wvc];
+        UISplitViewController *svc = [[UISplitViewController alloc] init];
+        //Set the delegate of the split view controller to the detail VC
+        svc.delegate = wvc;
+        
+        svc.viewControllers = @[masterNav, detailNav];
+        
+        self.window.rootViewController = svc;
+        
+    }else{
+        self.window.rootViewController = masterNav;
+    }
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
